@@ -1,0 +1,140 @@
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/e80c85d518.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather App</h1>
+
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          placeholder="Enter a city"
+          autocomplete="off"
+          id="search-input"
+        />
+
+        <input type="submit" value="Search" />
+        <button type="submit" id="weatherButton">
+          <i class="fas fa-map-marker-alt"></i>
+        </button>
+        <!--<input
+          type="submit"
+          value=""
+          id="weatherButton"
+        /> -->
+      </form>
+
+      <section class="main">
+        <section class="cityTemp">
+          <h2 id="Location">Location</h2>
+          <div class="emoji">☀</div>
+
+          <p class="tempToday">
+            <span id="todayTemp"></span> <a href="#" id="tempUnitC">°C|</a
+            ><a href="#" id="tempUnitF">°F</a>
+          </p>
+        </section>
+
+        <section class="info">
+          <h3 id="date"></h3>
+          <p class="tempDescribe" id="description">Clear</p>
+        </section>
+
+        <section class="right">
+          <p>
+            Precipitation: <span id="precip"> </span> <br />
+            Wind: <span id="wind"> </span> <br />
+            Humidity: <span id="humid"> </span>
+          </p>
+        </section>
+      </section>
+      <div class="cards">
+        <div class="row row-cols-2 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Mon</h5>
+                <p class="card-text-emoji">☁</p>
+                <p class="card-text-">10°C</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Tue</h5>
+                <p class="card-text-emoji">☁</p>
+                <p class="card-text-">10°C</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Wed</h5>
+                <p class="card-text-emoji">☁</p>
+                <p class="card-text-">10°C</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Thu</h5>
+                <p class="card-text-emoji">☁</p>
+                <p class="card-text-">10°C</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Fri</h5>
+                <p class="card-text-emoji">☁</p>
+                <p class="card-text-">10°C</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Sat</h5>
+                <p class="card-text-emoji">☁</p>
+                <p class="card-text-">10°C</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Sun</h5>
+                <p class="card-text-emoji">☁</p>
+                <p class="card-text-">10°C</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="footer">
+        <a
+          href="https://github.com/hannahsinclair054/PlusWeek6"
+          target="_blank"
+          class="footer"
+          >Open-source code</a
+        >, by Hannah Sinclair
+      </p>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
