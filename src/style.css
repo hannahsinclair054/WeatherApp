@@ -75,6 +75,9 @@ button {
 button#weatherButton:hover {
   background-color: rgba(202, 202, 202, 0.473);
 }
+#searchButton:hover {
+  font-weight: bold;
+}
 p.tempToday {
   text-align: center;
   font-size: 38px;
