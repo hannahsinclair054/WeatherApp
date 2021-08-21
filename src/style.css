@@ -117,6 +117,8 @@ p.tempDescribe {
   font-size: 16px;
   font-weight: 500;
   line-height: 0.1;
+}
+p.tempDescribe:first-letter {
   text-transform: capitalize;
 }
 
