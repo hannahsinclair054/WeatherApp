@@ -16,6 +16,8 @@
       src="https://kit.fontawesome.com/e80c85d518.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <title>Weather App</title>
   </head>
   <body>
@@ -38,27 +40,25 @@
 
       <section class="main">
         <section class="cityTemp">
-          <h2 id="Location">London</h2>
+          <h2 id="Location"></h2>
           <div class="emoji">🌥</div>
 
           <p class="tempToday">
-            <span id="todayTemp">19</span> <a href="#" id="tempUnitC">°C|</a
+            <span id="todayTemp"></span> <a href="#" id="tempUnitC">°C|</a
             ><a href="#" id="tempUnitF">°F</a>
           </p>
         </section>
 
         <section class="info">
           <h3 id="date">Saturday 12:00</h3>
-          <p class="tempDescribe" id="description">Mostly Cloudy</p>
+          <p class="tempDescribe" id="description"></p>
         </section>
 
         <section class="right">
           <p>
-            Precipitation: <span id="precip">94%</span>
+            <span> Humidity: <span id="humid"> </span>%</span>
             <br />
-            Wind: <span id="wind"> 5Km/h</span>
-            <br />
-            Humidity: <span id="humid">70% </span>
+            <span> Wind: <span id="wind"></span> Km/h</span>
           </p>
         </section>
       </section>
