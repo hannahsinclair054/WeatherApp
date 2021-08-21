@@ -13,19 +13,20 @@ h1 {
   padding: 10px 10px;
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.384);
-  border: 1px solid rgb(199, 199, 199);
-  box-shadow: 0 0 20px rgb(199, 199, 199);
+  border: 2px solid rgb(36, 111, 134);
+  box-shadow: 0 0 30px #4394c0;
   width: 90%;
 }
 
 section.main {
   max-width: 340px;
   max-height: 300px;
-  margin: 5px auto;
-  padding: 4px 6px;
+  margin: 10px auto;
+  padding: 5px 20px;
   border-radius: 16px;
   background-color: #fff;
   float: center;
+  text-align: center;
 }
 
 section.cityTemp {
@@ -41,8 +42,8 @@ section.cityTemp {
 section.info {
   max-width: 190px;
   max-height: 100px;
-  margin-top: -150px;
-  margin-left: -10px;
+  margin-top: -142.5px;
+  margin-left: -20px;
   padding: 4px 6px;
   border-radius: 16px;
   background-color: rgba(255, 255, 255, 0);
@@ -51,7 +52,7 @@ section.info {
 section.right {
   max-width: 140px;
   max-height: 100px;
-  margin-top: -100px;
+  margin-top: -80px;
   margin-right: -10px;
   padding: 4px 6px;
   border-radius: 16px;
@@ -88,13 +89,18 @@ span.todayTemp {
 #tempUnitF {
   position: relative;
   top: -20px;
+  left: -10px;
   font-size: 20px;
   text-transform: none;
   text-decoration: none;
+  color: #000;
 }
 #tempUnitC:hover,
 #tempUnitF:hover {
   text-decoration: underline;
+}
+p.tempToday {
+  margin-top: -15px;
 }
 
 .emoji {
@@ -154,4 +160,14 @@ p.footer {
   font-size: 14px;
   margin-bottom: 0;
   margin-top: 5px;
+  color: #000;
+  font-weight: 500;
+}
+a.footer {
+  color: #000;
+  text-decoration-line: none;
+}
+
+a.footer:hover {
+  text-decoration-line: underline;
 }
