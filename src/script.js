@@ -22,6 +22,24 @@ function formateDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+
+function celsToFahr(event) {
+  event.preventDefault();
+  let tempE1 = document.querySelector("#todayTemp");
+  let temp1 = tempE1.innerHTML;
+  tempE1.innerHTML = Math.round((temp1 * 9) / 5 + 32);
+}
+let fahr = document.querySelector("#tempUnitF");
+fahr.addEventListener("click", celsToFahr);
+//Temp Fahr to Cels
+function fahrToCels(event) {
+  let tempE2 = document.querySelector("#todayTemp");
+  let temp2 = tempE2.innerHTML;
+  tempE2.innerHTML = Math.round((temp2 - 32) * (5 / 9));
+}
+let cels = document.querySelector("#tempUnitC");
+cels.addEventListener("click", fahrToCels);
+
 function displayTemperature(response) {
   let cityElement = document.querySelector("#Location");
   let tempElement = document.querySelector("#todayTemp");
