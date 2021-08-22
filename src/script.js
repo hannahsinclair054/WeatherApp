@@ -1,3 +1,4 @@
+//time
 function formateDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -22,7 +23,7 @@ function formateDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
-
+// conversion of temperature
 function celsToFahr(event) {
   event.preventDefault();
   let tempE1 = document.querySelector("#todayTemp");
@@ -40,6 +41,7 @@ function fahrToCels(event) {
 let cels = document.querySelector("#tempUnitC");
 cels.addEventListener("click", fahrToCels);
 
+//display temperature and related info
 function displayTemperature(response) {
   let cityElement = document.querySelector("#Location");
   let tempElement = document.querySelector("#todayTemp");
@@ -48,6 +50,7 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
+  let icon = response.data.weather[0].icon;
   cityElement.innerHTML = response.data.name;
   tempElement.innerHTML = Math.round(response.data.main.temp);
   describElement.innerHTML = response.data.weather[0].description;
@@ -56,7 +59,7 @@ function displayTemperature(response) {
   dateElement.innerHTML = formateDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
-    `https:openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    "https:openweathermap.org/img/wn/" + icon + "@2x.png"
   );
 
   iconElement.setAttribute("alt", response.data.weather[0].description);
