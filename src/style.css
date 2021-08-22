@@ -127,6 +127,8 @@ h3 {
   flex-direction: row;
   text-align: center;
   margin: 10px auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .col {
